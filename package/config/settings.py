@@ -6,6 +6,7 @@ load_dotenv()  # Load .env into environment variables
 
 class Settings(BaseSettings):
     DATABASE_URL: str
+    VECTOR_SIZE: int
     DEBUG: bool = False
 
     class Config:
